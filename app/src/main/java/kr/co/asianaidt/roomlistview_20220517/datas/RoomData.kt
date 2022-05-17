@@ -1,10 +1,13 @@
 package kr.co.asianaidt.roomlistview_20220517.datas
 
+import java.io.Serializable
+
 class RoomData(
     val price: Int,
     val address: String,
     val floor: Int,
-    val explain: String) {
+    val explain: String,
+) : Serializable {
 
     //가격을 구하는 함수
     fun getPrice(): String{
