@@ -33,6 +33,7 @@ class RoomAdapter(
         val txtExplain = row.findViewById<TextView>(R.id.txtExplain)
 
         txtExplain.text = data.explain
+        txtAddressFloor.text = "${data.address}, ${data.getFloor()}"
 
         return row
 
